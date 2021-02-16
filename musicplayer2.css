@@ -1,0 +1,406 @@
+body{
+	margin: 0px;
+}
+
+/* common css rule */
+
+.text-color{
+	color: var(--front-color);
+}
+.border-radius{
+	border-radius: 50%;
+}
+.heading{
+	width: 100%;
+	text-align: left;
+	margin-left: 65px;
+}
+:root{
+	--bg-color: white;
+	--font-color: black;
+	--container-color: pink;
+    --container-hover-color: yellow;
+}
+
+
+/* header   */
+
+ 
+#header-div{
+	border: 3px solid black;
+	padding-top: 18px;
+	background-image: linear-gradient(45deg,#f9f3f3,#5c5959);
+}
+#header-div img{
+	height: 60px;
+	width: 60px;
+	padding-left: 15px;
+	display: inline-block;
+}
+#studio-name{
+	display: inline-block;
+	padding-left: 30px;
+	font-weight: 500;
+	font-style: italic;
+	font-family: fantasy;
+	font-size: 25px; 
+	color: var(--front-color);
+	margin-top: -20px;
+}
+#search-option{
+	display: inline-block;
+	border: 3px solid black;
+	position: absolute;
+	right: 20%;
+	top: 5%;
+}
+#search-option input{
+	border-radius: 5%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border: 1px solid transparent;
+	display: inline-block;
+	width: 70%;
+}
+#search-option input[type=text]{
+	font-weight: 400;
+	background-color: white;
+	color: black;
+}
+#search-option i{
+	background-color: #a749a0a8;
+	color: var(--front-color);
+}
+#search-option button{
+	border: 0px solid transparent;
+	background-color: grey;
+}
+
+#login-user-image{
+	position: absolute;
+	right: 5%;
+	height: 70px;
+	width: 70px;
+}
+
+
+/* wallpaper to give background color to main and aside*/
+/*#wallpaper{
+	background-color: ;
+
+}*/
+
+
+/*main section*/
+main{
+	display: inline-block;
+	border: 2px solid black;
+	height: 78vh;
+	width:66%;
+	margin: 4vh 0vw 0vh 4vw;
+	vertical-align: top;
+	overflow-y: scroll;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+
+
+/*card*/
+
+.card{
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-around;
+	border: 3px solid black;
+	width: 100%;
+	background-color: #eeb8e059;
+}
+
+.card-image{
+	width: 32%;
+	height: 40vh;
+	/*border: 4px solid red;*/
+	display: inline-block;
+}
+.card img{
+	height: 100%;
+	width: 100%;
+}
+.card-container{	
+	width: 60%;
+	height: 100%;
+	/*border: 2px solid yellow;*/
+	display: inline-block;
+	vertical-align: top;
+	height: auto;
+}	
+.card-heading{
+	padding-left: 4vh;
+	font-family: fantasy;
+	font-weight: 300;
+	font-size: 2rem;
+	letter-spacing: 0.4rem;
+	line-height: 1rem;
+	word-spacing: 1rem;
+	color: #880890;
+	margin-bottom: 15px;
+	text-shadow: 4px 4px 8px #be3fbb;
+}
+.card-container span{
+	color: #aa18ab;
+}
+.card-detail{
+	font-family: cursive;
+	font-size: 0.7rem;
+	color: #aa18ab;
+}
+.card-button{
+	padding: 1.2vh;
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: cursive;
+	font-weight: 200;
+	line-height: 1rem;
+	background-image: linear-gradient(45deg,pink,#7a0871);
+}
+.card-button a{
+	color: black;
+	text-decoration: none;
+
+}
+
+.card-container p{
+	color: #aa18ab;
+	margin-left: 5rem;
+	margin-top: 0rem;
+}
+
+/*list of song of cold play*/
+
+#coldplay-songs{
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	/*border: 2px solid red;*/
+	width: 100%;
+	justify-content: space-around;
+	color: black;
+}
+.cp-container{
+	border: 2px solid black;
+	height: 7vh;
+	width: 100%;
+	transition: 0.4s ease-in-out;
+}
+.cp-container:nth-child(2n){
+	background-color: lightgrey;
+}
+.cp-container:hover{
+	background-color: lightgrey;
+	transform: scale(1.03);
+}
+.cp-num{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 0.6rem;
+	margin-left: 0.6rem;
+}
+.cp-container img{
+      height: 100%;
+      width: 30%;
+      display: inline-block;
+}
+.cp-container h3{
+	display: inline-block;
+	vertical-align: top;
+	margin: 3px 1px 1px 10px;
+}
+.cp-container h3 p{
+	margin-top: 0vh;
+	font-size: 0.8rem;
+}
+.cp-icon-time{
+	float:right;
+	text-align: right;
+	margin-right: 4vw;
+	margin-top: 2vh;
+}
+.fa-plus{
+	margin-left: 2vw;
+}
+.cp-icon-time i:hover{
+	color: red;
+
+}
+
+
+
+/*aside section*/
+
+
+aside{
+	display: inline-block;
+	border: 2px solid black;
+	height: 78vh;
+	width:24%;
+	margin: 4vh 2vw 0vh 2vw;
+	vertical-align: top;
+	background-color: #989595;
+}
+#aside-heading h3{
+	display: inline-block;
+	margin: 2vh;
+}
+#aside-heading h5{
+	display: inline-block;
+	float: right;
+	margin: 3vh 2vh 2vh 2vh;
+}
+#aside-heading h5 i{
+	padding-left: 1vh;
+}
+
+
+
+
+/* queue list for popular artist */
+
+#queue-list{
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	height: 28vh;
+	border-bottom: 2px solid black;
+	overflow-y: scroll;
+}
+.q-container{
+	border: 2px solid black;
+	height: 6vh;
+	width: 96%;
+	margin: 2px;
+	transition: 0.4s ease-in-out;
+	background-color: lightgrey;
+}
+.q-container:hover{
+	background-color: lightgrey;
+}
+.q-container img{
+      height: 100%;
+      width: 30%;
+      display: inline-block;
+}
+.q-container h5{
+	display: inline-block;
+	vertical-align: top;
+	margin: 3px 1px 1px 1px;
+}
+.q-container h5 p{
+	margin-top: 0vh;
+	font-size: 0.5rem;
+}
+.q-icon-time {
+	float: right;
+	margin-right: 1px;
+}
+.q-icon-time i:hover{
+	color: red;
+}
+
+
+/*   recently played   */
+
+
+#recently-played-list{
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	height: 34vh;
+	overflow-y: scroll;
+}
+	
+
+/*  audio   */
+#audio-container:target{
+	border: 5px solid black;
+	bottom: 4px;
+	width: 99%;
+	height: auto;
+	overflow: visible;
+	border-radius: 25px;
+	background-color: #999898;
+}
+
+#audio-container{
+	position: fixed;
+	height: 0;
+	width: 0;
+    overflow: hidden;
+}
+.audio-details{
+	display: inline-block;
+}
+.audio-details img{
+	padding-left: 20px;
+	display: inline-block;
+}
+.audio-details p{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1.2rem;
+}
+#song{
+	margin-left: 15%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 14px
+}
+#audio-icon{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-top: 14px;
+}
+
+
+/*media query*/
+@media screen and (max-width: 600px)
+{
+	#search-option input{
+		width: 40%;
+	}
+	#search-option{
+		width: 100px;
+		right: 30%;
+	}
+	#studio-name{
+		font-size: 1.3rem;
+	}
+	main{
+		margin: 2vh 1vw 2vh 4vw;
+	}
+	.trending-container{
+	height: 18vh;
+	width: 10vw;
+	margin: 10px;
+    }
+    .cp-container{
+    	margin: 10px;
+    }
+    .pa-container{
+    	margin: 10px;
+    }
+    .stations-container{
+    	margin: 10px;
+    }
+
+    aside{
+		margin: 2vh 0vw 0vh 2vw ;
+	}
+}
